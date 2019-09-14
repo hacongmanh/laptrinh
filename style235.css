@@ -1,0 +1,22 @@
+.section{
+
+	text-align: justify-all;
+}
+.sub_section{
+	
+	text-align: justify-all;
+    text-indent: 5%;
+}
+.section{
+
+	text-align: justify-all;
+}
+h2 h3{ 
+text-align:left;
+line-height: 2px;
+text-decoration: underline;
+text-transform: uppercase;
+ }
+li{
+	list-style-type: none;
+}

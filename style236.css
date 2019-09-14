@@ -1,0 +1,22 @@
+.heading{
+	text-decoration: underline;
+	font-family: Arial;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+.general{
+	font-style: italic;
+	text-align: justify;
+}
+.places{
+	font: cursive;
+	text-decoration: underline;
+	font-size: medium;
+	text-transform: capitalize;
+}
+li{
+	font-size: small;
+   font-family: verdana;
+}
