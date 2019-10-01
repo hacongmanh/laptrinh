@@ -1,0 +1,43 @@
+<style>
+  body{background-color:#333300;
+     text-align:center;
+   
+5   
+06      }
+07   
+08      p{ color:#FFCC66;
+09   
+10      font-size:50px;
+11   
+12      }
+13   
+14      #menu ul li{
+15   
+16      margin:0;
+17   
+18      padding:0;
+19   
+20      text-align:center;
+21   
+22      display:inline;    }
+23   
+24      #menu li a{
+25   
+26      font-size:20px;
+27   
+28      font-weight:bold;
+29   
+30      color:#CC0033;
+31   
+32      padding: 0 15px;
+33   
+34      border-right:1px solid #00FF333;
+35   
+36      text-transform:uppercase;
+37   
+38      text-decoration:none;
+39   
+40      }
+41   
+42      #menu ul li:hover{background:white;}
+43  </style>
