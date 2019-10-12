@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BT652</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid" id="add_panel">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2>BT652</h2>
+            </div>
+            <div class="panel-body">
+                <form class="form" method="get" action="#" id="add_user">
+                    <span>Full name</span>
+                    <br/><br/>
+                    <input type="text" name="Fullname" placeholder="Enter Fullname" size="50" id="Fullname">
+                    <br/><br/>
+                    <span>Address</span>
+                    <br/><br/>
+                    <input type="text" name="Address" placeholder="Enter Address" size="50" id="Address">
+                    <br/><br/>
+                    <span>Age</span>
+                    <br/><br/>
+                    <input name="Age" pattern='[1-9][0-9]' placeholder="Enter Age" size="20" id="Age">
+                    <br/><br/>
+                    <span>Email</span>
+                    <br/><br/>
+                    <input type="email" name="Email" placeholder="Enter Email" type="email" size="50" id="Email">
+                    <br/><br/>
+                    <span>Phone number</span>
+                    <br/><br/>
+                    <input name="PhoneNumber" pattern='[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{3}' placeholder="Enter Phone number" type="tel" size="50" id="PhoneNumber">
+                    <br/><br/>
+                    <input type="submit" name="Submit" id="btnSubmit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#add_user").submit(function() {
+
+            var fullName = $('#Fullname').val();
+            var address = $('#Address').val();
+            var age = $('#Age').val();
+            var email = $('#Email').val();
+            var phoneNumber = $('#PhoneNumber').val();
+
+
+            if (fullName == '') {
+                alert(Bạn chưa nhập fullName)
+            } else if (address == '') {
+                alert(Bạn chưa nhập address)
+            } else if (age == '') {
+                alert(Bạn chưa nhập age)
+            } else if (email == '') {
+                alert(Bạn chưa nhập email)
+            } else if (phoneNumber == '') {
+                alert(Bạn chưa nhập phonenumber)
+            }
+        });
+    });
+</script>
+</style>
