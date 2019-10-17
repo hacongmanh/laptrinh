@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bt651</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.btn btn-default {
+		height: 5px;
+		padding: 50%;
+	}
+	#tong{
+		line-height: 50px;
+	}
+		#hieu{
+		line-height: 50px;
+	}
+		#tich{
+		line-height: 50px;
+	}
+		#thuong{
+		line-height: 50px;
+	}
+
+</style>
+</head>
+<body>
+<form action="" method="POST" role="form">
+	<legend>BT651</legend>
+
+	<div class="form-group">
+		<label>A:</label>
+		<input type="text" class="form-control" id="a" placeholder="a">
+	</div>
+	<div class="form-group">
+		<label >B:</label>
+		<input type="text" class="form-control" id="b" placeholder="b">
+	</div>
+	<div>
+		<button type="button" class="btn btn-default" id="tong">+</button>
+		<button type="button" class="btn btn-default" id="hieu">-</button>
+		<button type="button" class="btn btn-default" id="tich">*</button>
+		<button type="button" class="btn btn-default" id="thuong">/</button>
+			
+			  </div>
+          
+            <span  style="padding: 8px;font-size: 28pt;float: left;  ">=</span>
+            <div id="result" style="padding-top: 10px;text-align: center; float: left;font-size: 35px;"></div>
+        </div>
+    </div>
+	
+	
+	<script type="text/javascript">
+	  $('#tong').click(function(){
+    var a = $('#a').val();
+    var b = $('#b').val();
+       if (a=='') {
+	alert('nhập a') 
+}
+if (b=="") {alert('nhập b')}
+    a = parseInt(a);
+    b = parseInt(b);
+    c = a + b;
+        $('#result').text(c);
+
+    })
+
+    $('#hieu').click(function(){
+    var a = $('#a').val();
+    var b = $('#b').val();
+       if (a=='') {
+	alert('nhập a')
+    
+}
+if (b=="") {alert('nhập b')}
+    a = parseInt(a);
+    b = parseInt(b);
+    c = a - b;
+        $('#result').text(c);
+
+    })
+
+    $('#tich').click(function(){
+    var a = $('#a').val();
+    var b = $('#b').val();
+    if (a=='') {
+	alert('nhập a')
+    
+}
+if (b=="") {alert('nhập b')}
+    a = parseInt(a);
+    b = parseInt(b);
+    c = a * b;
+
+        $('#result').text(c);
+
+    })
+
+    $('#thuong').click(function(){
+    var a = $('#a').val();
+    var b = $('#b').val();
+       if (a=='') {
+	alert('nhập a')
+    
+}
+if (b=="") {alert('nhập b')}
+    a = parseInt(a);
+    b = parseInt(b);
+    if(b==0){
+        alert('b phải khác 0');
+    }
+    else{
+    c = a / b;
+        $('#result').text(c);
+    }
+    })
+	</script>
+
+	
+</form>
+</body>
+</html>
