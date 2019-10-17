@@ -47,39 +47,44 @@ body{
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">vui lòng điền đúng định dạng email</small><br>
     <label for="exampleInputEmail1">Phone</label>
-     <input name="PhoneNumber"  class="form-control" pattern='[1-9][0-9]' placeholder="Enter Phone number" type="tel" size="50" id="PhoneNumber">
+     <input name="PhoneNumber"  class="form-control" pattern='[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{3}' placeholder="Enter Phone number" type="tel" size="50" id="PhoneNumber">
    
-   
+    
   </div>
 
  
   <button type="submit" class="btn btn-primary">Submit</button>
-      <script>
-        $(document).ready(function() {
-            $("#add_user").submit(function() {
-
-                var fullName = $('#Fullname').val();
-                var address = $('#Address').val();
-                var age = $('#Age').val();
-                var email = $('#Email').val();
-                var phoneNumber = $('#PhoneNumber').val();
-
-
-                if (fullName == '') {
-                    alert(Bạn chưa nhập fullName)
-                } else if (address == '') {
-                    alert(Bạn chưa nhập address)
-                } else if (age == '') {
-                    alert(Bạn chưa nhập age)
-                } else if (email == '') {
-                    alert(Bạn chưa nhập email)
-                } else if (phoneNumber == '') {
-                    alert(Bạn chưa nhập phonenumber)
+       <script>
+        $(function(){
+            $('#submit').click(function () {
+                if(/^[A-Za-z\s]{1,}$/.test($('#name').val())==true){
+                    $('#name').css('background','#fff');
+                }else{
+                    $('#name').css('background','red')
                 }
-            });
-        });
-    </script>
 
+                if(/^[1-9]{1,}[0-9]{0,}$/.test($('#age').val())==true){
+                    $('#age').css('background','#fff');
+                }else{
+                    $('#age').css('background','red')
+                }
+
+                if(/@{1,}/.test($('#email').val())==true){
+                    $('#email').css('background','#fff');
+                }else{
+                    $('#email').css('background','red')
+                }
+
+                if(/^[0-9-]{1,}$/.test($('#phone-number').val())==true || /^[+]{1,1}[0-9-]{1,}$/.test($('#phone-number').val())==true){
+                    $('#phone-number').css('background','#fff');
+                }else{
+                    $('#phone-number').css('background','red')
+                }
+            })  
+        })
+        
+    </script>
+</script>
 </form>
 </body>
 </html>
