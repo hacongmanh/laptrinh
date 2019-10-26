@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="xz.html">
   <link rel="stylesheet" type="text/css" href="sanpham.html">
   <link rel="stylesheet" type="text/css" href="khuyenmai.html">
+  <link rel="stylesheet" type="text/css" href="chitiet.html">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -41,7 +42,7 @@
         <li><a href="lienhe.html">Liên Hệ</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>login</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>login</a></li>
       </ul>
     </div>
   </div>
@@ -53,24 +54,47 @@
 </div>
 </div>
 
-<div style="height: 630px" class="container">
-      <h2>Chúng Tôi Sẽ Sớm Liên Hệ Với Bạn</h2>
-        <form action="/action_page.php">
-          <label for="fname">Họ Và Tên</label>
-          <input type="text" id="name" name="name" placeholder="Nhập họ và tên...">
-              
-          <label for="lname">Email</label>
-          <input type="text" id="email" name="email" placeholder="Nhập email...">
-               
-          <label for="country">Số Điện Thoại</label>
-          <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại...">
+<div  style="height: 630px;" class="container">
+  <h1 style="text-align: center;">Chúng Tôi Sẽ Sớm Liên Hệ Với Bạn</h1>
+   <div>
+<div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <div class="form-group">
+          <label>Tên :</label>
+          <input type="text" name="username" id="username_id" class="form-control username_class" placeholder="Enter user name">
+        </div>
+         <div class="form-group">
+          <label>Họ Và Tên Đệm</label>
+          <input type="text" name="username" id="username_id" class="form-control username_class" placeholder="Nhập Tên Đệm Và Họ">
+        </div>
+         <div class="form-group">
+          <label>Email:</label>
+          <input type="Email" name="username" id="username_id" class="form-control username_class" placeholder="Enter Email">
+        </div>
+         <label>Nơi sống</label>
+   <select class="form-control">
+      <option value="" selected>Nơi sống của bạn</option>
+      <option value="">TPHCM</option>
+      <option value="">Hà Nội</option>
+      <option value="">Khác</option>
+   </select>
+        <div class="form-group">
+          <label>Giới Tính</label>
+          <input type="text" name="password" class="form-control" placeholder="Nam-Nữ">
+        </div>
+        </div>
+   <input type="checkbox" required name="">
+   <label>Tôi đồng ý điều khoản sử dụng</label>
+</div>
+     
 
-          <label for="address">Địa Chỉ</label>
-          <input type="text" id="address" name="address" placeholder="Nhập địa chỉ...">
+  
+</div>
+</div>
 
-                   <input type="button" onclick="alert('Thành Công')" value="Submit"/>
+<button style="margin-left: 10px;" type="button" class="btn btn-success" onclick="alert('Thành Công')" value="Submit">button</button>
 
-      </form>
     </div>
 <footer class="container-fluid text-center " style="background-color: #f2f2f2;margin-bottom: 0px;">
   <p>Online Store Copyright</p>  
